@@ -1,0 +1,44 @@
+<article class="edit-user-container">
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="name">Nombre:</label>
+			{{input type="text"  class="form-control" value=user.userSelected.Nombre}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="surname">Apellidos:</label>
+			{{input type="text"  class="form-control" value=user.userSelected.Apellidos}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="password">Password:</label>
+			{{input type="text"  class="form-control" value=user.userSelected.Password}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="email">Email:</label>
+			{{input type="text"  class="form-control" value=user.userSelected.Email_Usuario}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="fixedEmail">Email Fijo:</label>
+			{{input type="text"  class="form-control" value=user.userSelected.Email_Fijo}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="bossEmail">Email Jefe:</label>
+			{{input type="text"  class="form-control" value=user.userSelected.Email_Jefe}}
+		</div>
+	</div>
+	<div class="col-md-12 m-t-25 text-right">
+		<button type="button" {{action 'editModel' user.userSelected user.userModel}}class="btn btn-primary btn-cons btn-create">EDITAR</button>
+        {{#link-to "user" id="createButton" class=" btn btn-default btn-cons"}}
+        	CANCELAR
+        {{/link-to}}
+    </div>
+</article>

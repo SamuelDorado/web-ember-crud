@@ -1,0 +1,43 @@
+
+	<article class="user-list--container">
+		<div class="col-md-6  page-title--container">
+			<h1 class="col-md-1 topic--header">
+				Users
+			</h1>
+		</div>
+		{{outlet}}
+		<div class="toolbar">
+			{{#link-to "user.delete_user" class='btn btn-default datatable-button pull-right delete--button'  type='button' name='button' disabled=deleteButtonIsDisabled}}<i class='fa fa-trash-o fa-1x'></i>{{/link-to}}
+			{{#link-to "user.edit_user" class='btn btn-default datatable-button pull-right delete--button'  type='button' name='button'}}<i class='fa fa-pencil-square-o fa-1x'></i>{{/link-to}}
+
+		</div>			
+		<table id="userstable"class="table table-hover table-bordered">
+			<thead>		
+				<tr>
+					<th>Nombre</th>
+					<th>Apellidos</th>
+					<th>Password</th>
+					<th>Email Usuario</th>
+					<th>Email Fijo</th>
+				</tr>
+			</thead>
+			<tbody>
+				{{#each model as |user index|}}
+					<tr class="clickable-row" {{action "selectUser" user}}>
+						<td class="col-md-1">{{user.Nombre}}{{user._id}}</td>
+						<td class="col-md-1">{{user.Apellidos}}</td>
+						<td class="col-md-1">{{user.Password}}</td>
+						<td class="col-md-1">{{user.Email_Usuario}}</td>
+						<td class="col-md-1">{{user.Email_Fijo}}</td>
+					</tr>
+				{{/each}}
+			</tbody>
+		</table>
+	</article>
+		{{#link-to "user.new_user" id="addButton" class=" btn btn-primary floating-button"}}
+			<i class="fa fa-plus fa-1x" aria-hidden="true"></i>
+		{{/link-to}}
+
+
+
+

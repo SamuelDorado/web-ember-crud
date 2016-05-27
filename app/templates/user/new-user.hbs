@@ -1,0 +1,55 @@
+<article class="new-user-container">
+	<h3>
+		Nuevo Usuario
+	</h3>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="name">Nombre:</label>
+			{{input type="text"  class="form-control" value=name}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="surname">Apellidos:</label>
+			{{input type="text"  class="form-control" value=surname}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="password">Password:</label>
+			{{input type="text"  class="form-control" value=password}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="email">Email:</label>
+			{{input type="text"  class="form-control" value=email}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="fixedEmail">Email Fijo:</label>
+			{{input type="text"  class="form-control" value=fixedEmail}}
+		</div>
+	</div>
+	 <div class="col-md-6">
+		<div class="form-group">
+			<label for="bossEmail">Email Jefe:</label>
+			{{input type="text"  class="form-control" value=bossEmail}}
+		</div>
+	</div>
+    <div class="col-md-6">
+	    <div class="form-group">	        
+	        <label for="league">LIGA</label>
+	        <select id="edit-league-userManagement" class="form-control white-tooltip" data-toggle="tooltip" data-placement="top">
+	            <option value="">Seleccione una opción</option>
+	        </select>
+	    </div>
+	</div>
+	<div class="col-md-12 m-t-25 text-right">
+		<button type="button" class="btn btn-primary btn-cons btn-create">CREAR</button>
+        {{#link-to "user" id="createButton" class=" btn btn-default btn-cons"}}
+        	CANCELAR
+        {{/link-to}}
+    </div>
+</article>

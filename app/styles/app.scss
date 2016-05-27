@@ -1,0 +1,108 @@
+.header-container{
+	padding: 20px 40px;
+	background: #205081;
+}
+
+.header-container li {
+	color: white;
+	margin-bottom: 10px;
+	padding-top: 0;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #3572B0;
+}
+
+.header-container li a {
+	color: white;
+}
+
+.floating-button{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background:#205081;
+	color: white;
+	position:fixed;
+  	top: 80%;
+  	right: 60px;
+}
+.floating-button > i {
+	padding: 6px;
+    padding-top: 12px;
+}
+
+.new-user-container{
+    float: left;
+    height: 474px;
+    width: 50%;
+    border: 5px solid #E5E5E5;
+    padding: 10px 30px 10px 30px;
+    background: white;
+    margin: 30px 25% 0 25%;
+}
+.edit-user-container{
+    float: left;
+    height: 474px;
+    width: 50%;
+    padding: 10px 30px 10px 30px;
+    background: white;
+    margin: 30px 25% 0 25%;
+}
+.delete-user-container{
+    float: left;
+    height: 120px;
+    width: 50%;
+    padding: 10px 30px 10px 30px;
+    background: white;
+    margin: 30px 25% 0 25%;
+}
+
+.delete-user-buttons--container {
+	padding-top: 15px;
+}
+
+.btn-create{
+	padding-right: 10px;
+}
+
+.user-list--container{
+	width: 85%;
+    margin: 0 auto;
+}
+
+.filter--link{
+	padding-top: 35px;
+}
+
+.topic--header{
+	padding-left: 0;
+}
+
+.toolbar{
+	float: left;
+	display: inline-block;
+	width: 100%;
+}
+
+.selected--counter{
+	margin-left: 10px;
+	line-height: 35px;
+}
+.delete--button{
+	margin: 0 5px 10px 0;
+}
+.cxbx-col{
+	width:2%;
+}
+.page-title--container {
+	width: 100%;
+}
+
+@media (min-width: 768px) {
+	.nav-justified > li {
+	    display: table-cell;
+	    width: 15%;
+	}
+}

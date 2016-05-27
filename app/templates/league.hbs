@@ -1,0 +1,31 @@
+<article class="user-list--container">
+	<div class="col-md-6">
+		<h1 class="col-md-2 topic--header">
+			Leagues
+		</h1>
+		{{#link-to "user.new_user" class="col-md-2 filter--link"}}
+			Filter
+		{{/link-to}}
+	</div>
+	<table class="table  table-hover table-bordered">
+		<thead>
+			<tr>
+				<th>Nombre Liga</th>
+				<th>Fecha Inicio</th>
+				<th>Fecha Fin</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each model as |league|}}
+				<tr>
+					<td  class="col-md-1">{{league.Nombre_Liga}}</td>
+					<td  class="col-md-1">{{league.Fecha_Inicio}}</td>
+					<td  class="col-md-1">{{league.Fecha_Fin}}</td>
+				</tr>
+			{{/each}}
+		</tbody>
+	</table>
+</<article>
+{{#link-to "league" id="addButton" class=" btn btn-primary floating-button"}}
+	<i class="fa fa-plus fa-1x" aria-hidden="true"></i>
+{{/link-to}}

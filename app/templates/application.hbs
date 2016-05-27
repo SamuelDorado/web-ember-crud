@@ -1,3 +1,16 @@
-<h2 id="title">Welcome to Ember</h2>
+<header>
+	<section class="header-container">
+		<ul class="nav nav-pills nav-justified">
+			<li><i class="fa fa-rebel fa-3x" aria-hidden="true"></i></li>
+			<li>{{#link-to "user"}}Users{{/link-to}}</li>
+			<li>{{#link-to "league"}}Leagues{{/link-to}}</li>
+		</ul>
 
-{{outlet}}
+	</section>
+</header>
+<section>
+	{{outlet}}
+</section>
+<footer>
+	
+</footer>
