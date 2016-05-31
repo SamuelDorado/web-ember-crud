@@ -10,8 +10,6 @@ This is one of my first tries of using EmberJS to build a simple CRUD applicatio
 * bootstrap and plain CSS for modeling
 
 
-##If you want to try it just follow the next instrucions:
-
 ## Installation
 
 * `git clone <repository-url>` this repository
