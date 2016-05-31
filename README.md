@@ -1,17 +1,14 @@
-# Web-pernod-ember
+# Web-ember-crud
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This is one of my first tries of using EmberJS to build a simple CRUD application.
+Its build with:
+	*ember v2.5.0 
+	*ember-cli for the project architecture
+	*Mirage and fakerJs for fake data
+	*bootstrap and plain CSS for modeling
 
-## Prerequisites
 
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+If you want to try it just follow the next instrucions:
 
 ## Installation
 
@@ -24,24 +21,6 @@ You will need the following things properly installed on your computer.
 
 * `ember server`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
 
 ## Further Reading / Useful Links
 
