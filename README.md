@@ -1,7 +1,7 @@
 # Web-ember-crud
 
 This is one of my first tries of using EmberJS to build a simple CRUD application.
-Its build with:
+##Its build with:
 	*ember v2.5.0 
 	*ember-cli for the project architecture
 	*Mirage and fakerJs for fake data
