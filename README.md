@@ -2,10 +2,10 @@
 
 This is one of my first tries of using EmberJS to build a simple CRUD application.
 ##Its build with:
-	*ember v2.5.0 
-	*ember-cli for the project architecture
-	*Mirage and fakerJs for fake data
-	*bootstrap and plain CSS for modeling
+* ember v2.5.0 
+* ember-cli for the project architecture
+* Mirage and fakerJs for fake data
+* bootstrap and plain CSS for modeling
 
 
 If you want to try it just follow the next instrucions:
