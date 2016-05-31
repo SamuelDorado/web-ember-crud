@@ -1,6 +1,6 @@
 <article class="delete-user-container">
 	<h3 class="col-md-7">
-		¿Desea borrar este usuario?
+		¿Desea borrar a {{user.userModel.Nombre}} {{user.userModel.Apellidos}}?
 	</h3>
 	<div class="col-md-4 delete-user-buttons--container text-right">
 		<button type="button" {{action 'deleteModel' user.userModel}}class="btn btn-primary btn-cons btn-create">Borrar</button>

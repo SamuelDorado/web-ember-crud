@@ -5,49 +5,41 @@
 	 <div class="col-md-6">
 		<div class="form-group">
 			<label for="name">Nombre:</label>
-			{{input type="text"  class="form-control" value=name}}
+			{{input type="text"  class="form-control" value=newUser.Nombre}}
 		</div>
 	</div>
 	 <div class="col-md-6">
 		<div class="form-group">
 			<label for="surname">Apellidos:</label>
-			{{input type="text"  class="form-control" value=surname}}
+			{{input type="text"  class="form-control" value=newUser.Apellidos}}
 		</div>
 	</div>
 	 <div class="col-md-6">
 		<div class="form-group">
 			<label for="password">Password:</label>
-			{{input type="text"  class="form-control" value=password}}
+			{{input type="text"  class="form-control" value=newUser.Password}}
 		</div>
 	</div>
 	 <div class="col-md-6">
 		<div class="form-group">
 			<label for="email">Email:</label>
-			{{input type="text"  class="form-control" value=email}}
+			{{input type="text"  class="form-control" value=newUser.Email_Usuario}}
 		</div>
 	</div>
 	 <div class="col-md-6">
 		<div class="form-group">
 			<label for="fixedEmail">Email Fijo:</label>
-			{{input type="text"  class="form-control" value=fixedEmail}}
+			{{input type="text"  class="form-control" value=newUser.Email_Fijo}}
 		</div>
 	</div>
 	 <div class="col-md-6">
 		<div class="form-group">
 			<label for="bossEmail">Email Jefe:</label>
-			{{input type="text"  class="form-control" value=bossEmail}}
+			{{input type="text"  class="form-control" value=newUser.Email_Jefe}}
 		</div>
 	</div>
-    <div class="col-md-6">
-	    <div class="form-group">	        
-	        <label for="league">LIGA</label>
-	        <select id="edit-league-userManagement" class="form-control white-tooltip" data-toggle="tooltip" data-placement="top">
-	            <option value="">Seleccione una opción</option>
-	        </select>
-	    </div>
-	</div>
 	<div class="col-md-12 m-t-25 text-right">
-		<button type="button" class="btn btn-primary btn-cons btn-create">CREAR</button>
+		<button type="button"  {{action 'createNewUser' newUser}} class="btn btn-primary btn-cons btn-create">CREAR</button>
         {{#link-to "user" id="createButton" class=" btn btn-default btn-cons"}}
         	CANCELAR
         {{/link-to}}

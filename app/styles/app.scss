@@ -35,7 +35,7 @@
 
 .new-user-container{
     float: left;
-    height: 474px;
+	height: 650px;
     width: 50%;
     border: 5px solid #E5E5E5;
     padding: 10px 30px 10px 30px;
@@ -53,10 +53,10 @@
 .delete-user-container{
     float: left;
     height: 120px;
-    width: 50%;
+	width: 100%;
+    margin: 0 auto;
     padding: 10px 30px 10px 30px;
     background: white;
-    margin: 30px 25% 0 25%;
 }
 
 .delete-user-buttons--container {
@@ -90,19 +90,132 @@
 	margin-left: 10px;
 	line-height: 35px;
 }
+
 .delete--button{
 	margin: 0 5px 10px 0;
 }
+
 .cxbx-col{
 	width:2%;
 }
+
 .page-title--container {
 	width: 100%;
 }
+.mainLink{
+	width:75px;
+}
+
+.navBarLink{
+	line-height: 45px;
+}
+
+.navBar li{
+	float:left;
+	max-width:150px;
+}
+
+.index-initiation--label {
+	text-align: center;
+	font-size: 4em;
+}
+
+.tomster-animation--container{
+    text-align: center;
+    width: 200px;
+    min-width: 200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.tomseter-eyes--container {
+    width: 85%;
+	max-width: 200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.tomster-eye{
+    width: 45px;    
+    background: #B57C40;
+    position: absolute;
+}
+
+.left-eye{
+    left: 30px;
+    transform: rotate(4deg);
+    top: 45px;
+	overflow: hidden;
+   	height: 0;
+	animation-name: eyesmovement;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+
+
+.right-eye{
+    left: 90px;
+    transform: rotate(4deg);
+    top: 42px;
+	overflow: hidden;    
+   	height: 0;
+	animation-name: eyesmovement ;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.tomster--image {
+	position: absolute;
+	left:0;
+	margin: 0 auto;
+}
+
+.tomster-over--image {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes eyesmovement {
+
+0%,6% {height: 0px;}
+2% {height: 30px;}
+
+}
+
+
 
 @media (min-width: 768px) {
 	.nav-justified > li {
 	    display: table-cell;
 	    width: 15%;
 	}
+	.new-user-container{
+	    height: 570px;;
+	}
+}
+
+@media (min-width: 1000px) {
+	.new-user-container{
+	    height: 550px;;
+	}
+}
+
+@media (min-width: 1200px) {
+	.delete-user-container{
+		width: 65%;
+    	margin: 30px 25% 0 25%;
+	}
+	.new-user-container{
+	    height: 460px;;
+	}
+	
 }
